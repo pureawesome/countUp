@@ -7,6 +7,6 @@ $('.countup').countUp();
 or
 
 $('.countup2').countUp({
-     speed: 20,
-     jump: 100
-   })
+  speed: 20,
+  jump: 100
+});
