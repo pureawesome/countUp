@@ -4,7 +4,7 @@
 
     options = $.extend({
             jump: 5,
-      			speed: 3
+      			speed: 5
         }, options);
 
     var self = this,
