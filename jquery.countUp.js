@@ -7,9 +7,6 @@
       			speed: 3
         }, options);
 
-    var message = "test";
-    $('.message').html(message);
-
     var self = this,
 				$self = $(this),
 				data = parseInt($self.attr('data-startnum')) || 2000,
