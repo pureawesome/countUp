@@ -2,6 +2,10 @@ A simple jQuery plugin that dynamically updates based upon jump and speed variab
 
 Example:
 ```
+<div data-startnum="220">This will be overwritten</div>
+```
+
+```
 $('.countup').countUp();
 ```
 or

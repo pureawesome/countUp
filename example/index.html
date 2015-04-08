@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>countUp</title>
+
+    <link href="countup.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <script src="../jquery.countup.js" type="text/javascript"></script>
+
+</head>
+<body>
+    <h1>Examples</h1>
+    <p>
+      <div class="count countup2" data-startnum="220">
+        <span class="part">
+          This will be overwritten
+        <span>
+      </div>
+    </p>
+
+    <p>
+      <div class="count countu" data-startnum="220">
+        <span class="part">
+          This will be overwritten
+        <span>
+      </div>
+    </p>
+
+    <p>
+      <span class="count countp2" data-startnum="118390">This will be overwritten</span>
+    </p>
+
+    <script>
+  //    $('.countup').countUp();
+
+      $('.countup2').countUp({
+        speedMin: 8,
+        speedMax: 10,
+        jumpMin: 2,
+        jumpMax: 8,
+      });
+    </script>
+</body>
+</html>
