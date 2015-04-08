@@ -6,7 +6,8 @@
             jumpMin: 1,
             jumpMax: 5,
       			speedMin: 1,
-            speedMax: 5
+            speedMax: 5,
+            commas: true
         }, options);
 
     var self = this,
@@ -39,12 +40,25 @@
       $self.html(data);
     }
 
+    function numberWithCommas(x) {
+      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+
+    function numberRemoveCommas(x) {
+      return parseInt(x.toString().replace(",", ""));
+    }
+
+
+
     function startCount(){
 
       jump = getJump();
       speed = getSpeed() * 1000;
       console.log(jump,speed);
+      data = (options.commas ? numberRemoveCommas(data) : data);
       data += jump;
+      data = (options.commas ? numberWithCommas(data) : data);
+  //    data = numberWithCommas(data);
       $self.html(data);
     //  translateForCSS(data);
 

@@ -29,13 +29,19 @@
     </p>
 
     <p>
-      <span class="count countp2" data-startnum="118390">This will be overwritten</span>
+      <span class="count countup" data-startnum="118390">This will be overwritten</span>
     </p>
 
     <script>
   //    $('.countup').countUp();
 
       $('.countup2').countUp({
+        speedMin: 8,
+        speedMax: 10,
+        jumpMin: 2,
+        jumpMax: 8,
+      });
+      $('.countup').countUp({
         speedMin: 8,
         speedMax: 10,
         jumpMin: 2,
